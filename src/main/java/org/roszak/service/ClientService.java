@@ -1,17 +1,15 @@
 package org.roszak.service;
 
 
+import lombok.RequiredArgsConstructor;
 import org.roszak.repository.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class ClientService {
-    ClientRepository repository;
-@Autowired
-    public ClientService(ClientRepository repository) {
-        this.repository = repository;
-    }
+    private final ClientRepository repository;
 
     public void createAccount(Client client){
     if (client==null){
