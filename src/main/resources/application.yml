@@ -1,0 +1,12 @@
+
+
+  spring:
+    datasource:
+    username: "root"
+    password: "qwerty"
+    url: "jdbc:mysql://localhost:3306/test"
+    driver-class: "com.mysql.jdbc.Driver"
+    jpa:
+      hibernate:
+        ddl-auto: none
+      show-sql: true
